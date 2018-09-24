@@ -85,10 +85,54 @@
       </ul>
     </section>
     
+    <section id="actor-model" class="slide">
+      <h2>Modularity using the <em>actor</em> model</h2>
+      <p class="next">Logic is separated into different <em>actors</em>.</p>
+      <p class="next">Each actor <em>independently</em> performs a <em>specific task</em>.</p>
+      <p class="next">
+          Examples:
+          <ul style="font-style: italic">
+              <li>JSON-LD parsing actor</li>
+              <li>SPARQL union actor</li>
+              <li>Linked Data document fetching actor</li>
+              <li>...</li>
+          </ul>
+      </p>
+    </section>
+    
+    <section id="actor-mediator-bus" class="slide">
+      <h2>Actors can be <em>combined</em> for solving more <em>complex tasks</em>.</h2>
+      <p class="next">Actors subscribe to task-specific <em>buses</em>.</p>
+      <p class="next"><em>Mediators</em> are responsible for selecting an actor to solve a certain task.</p>
+      <p class="next center">
+          <img src="img/actor-mediator-bus.svg" width="900px">
+      </p>
+    </section>
+    
+    <section id="actor-mediator-bus" class="slide">
+      <h2>Modules are wired together through semantic configuration files</h2>
+      <p class="next"><a href="https://componentsjs.readthedocs.io/en/latest/">Components.js</a>: a semantic dependency injection framework.</p>
+      <p class="next">Configuration files declare and parameterize actors, mediators and buses.</p>
+      <div class="next">
+          <span>Example: RDF parser</span>
+          <pre style="font-size: 0.75em">"@id": "http://example.org/myrdfparser",
+"actors": [
+  { 
+    "@type": "ActorRdfParseN3",
+    "cc:Actor/bus": "cbrp:Actor/RdfParse"
+  },
+  {
+    "@type": "ActorRdfParseJsonLd",
+    "cc:Actor/bus": "cbrp:Actor/RdfParse"
+  }
+]</pre>
+      </div>
+    </section>
+    
     <section id="index-implementation" class="slide index">
       <ul>
         <li><a href="#index-architecture">Architecture</a></li>
-        <li class="curren"><a href="#index-implementation">Implementation</a></li>
+        <li class="current"><a href="#index-implementation">Implementation</a></li>
         <li><a href="#index-performance">Performance</a></li>
       </ul>
     </section>
