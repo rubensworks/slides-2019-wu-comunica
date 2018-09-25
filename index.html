@@ -62,10 +62,10 @@
     
     <section id="comunica" class="slide center" style="background-color: #be1622; color: white">
       <img src="img/comunica.svg" width="250px" />
-      <ul>
-          <li>Highly modular meta query engine</li>
+      <ul style="font-size: 1.5em">
+          <li>Highly modular <em>meta</em> query engine</li>
           <li>Flexible configuration system</li>
-          <li>Implemented in JavaScript</li>
+          <li>Built for the Web</li>
       </ul>
     </section>
     
@@ -134,6 +134,91 @@
         <li><a href="#index-architecture">Architecture</a></li>
         <li class="current"><a href="#index-implementation">Implementation</a></li>
         <li><a href="#index-performance">Performance</a></li>
+      </ul>
+    </section>
+    
+    <section id="implementation-details" class="slide">
+      <h2>Implementation details</h2>
+      <ul>
+          <li>Open-source under MIT license</li>
+          <li>Implemented in TypeScript/JavaScript</li>
+          <li>114 separate modules</li>
+          <li>1619 unit tests with a coverage of 100%</li>
+          <li>Compatible with JavaScript API specification of RDFJS (W3C community group)</li>
+      </ul>
+    </section>
+    
+    <section id="Features" class="slide">
+      <h2>Current features</h2>
+      <ul>
+          <li>
+              Nearly full SPARQL 1.1 support
+              <span style="color:gray; float:right">Handled with an internal SPARQL algebra</span>
+          </li>
+          <li>
+              GraphQL queries
+              <span style="color:gray; float:right">GraphQL is translated to SPARQL algebra</span>
+          </li>
+          <li>
+              Memento datetime negotiation
+              <span style="color:gray; float:right">Time-travel queries</span>
+          </li>
+          <li>
+              Environment-agnostic
+              <span style="color:gray; float:right">JS applications, browser, command-line</span>
+          </li>
+          <li>
+              Federated querying of heterogeneous sources:
+              <span style="color:gray; float:right">Any combination of sources</span>
+          </li>
+          <li>
+              <ul>
+                  <li>Linked Data document</li>
+                  <li>Triple Pattern Fragment</li>
+                  <li>SPARQL endpoint</li>
+                  <li>HDT files</li>
+                  <li>RDFJS Source</li>
+              </ul>
+          </li>
+      </ul>
+    </section>
+    
+    <section id="Features" class="slide">
+      <h2>Federate over any set of sources<br />from <a href="http://query.linkeddatafragments.org/#datasources=http%3A%2F%2Ffragments.dbpedia.org%2F2016-04%2Fen;https%3A%2F%2Fruben.verborgh.org%2Fprofile%2F%23me&query=SELECT%20%3FinterestName%0AWHERE%20%7B%0A%20%20ruben%3Ame%20foaf%3Atopic_interest%20%3Finterest.%0A%20%20%3Finterest%20rdfs%3Alabel%20%3FinterestName.%0A%20%20FILTER%20LANGMATCHES(LANG(%3FinterestName)%2C%20%20%22EN%22)%0A%7D">your browser</a></h2>
+      <iframe class="query-client" src="engine/#datasources=http%3A%2F%2Ffragments.dbpedia.org%2F2016-04%2Fen;https%3A%2F%2Fruben.verborgh.org%2Fprofile%2F%23me&query=SELECT%20%3FinterestName%0AWHERE%20%7B%0A%20%20ruben%3Ame%20foaf%3Atopic_interest%20%3Finterest.%0A%20%20%3Finterest%20rdfs%3Alabel%20%3FinterestName.%0A%20%20FILTER%20LANGMATCHES(LANG(%3FinterestName)%2C%20%20%22EN%22)%0A%7D"></iframe>
+    </section>
+    
+    <section id="Features" class="slide">
+      <h2>How to use Comunica?</h2>
+      <ul>
+          <li>
+              <a href="http://query.linkeddatafragments.org/">query.linkeddatafragments.org</a>
+              <span style="color:gray; float:right">Try out queries in your browser</span>
+          </li>
+          <li>
+              <a href="https://github.com/comunica/comunica">Source code on GitHub</a>
+              <span style="color:gray; float:right">Develop your own Comunica modules</span>
+          </li>
+          <li>
+              <a href="http://comunica.readthedocs.io/en/latest/">Documentation</a>
+              <span style="color:gray; float:right">Usage and development manual</span>
+          </li>
+          <li>
+              <a href="https://www.npmjs.com/package/@comunica/actor-init-sparql">NPM packages</a>
+              <span style="color:gray; float:right">Using Comunica in JavaScript applications</span>
+          </li>
+          <li>
+              <a href="https://hub.docker.com/r/comunica/actor-init-sparql/">Docker images</a>
+              <span style="color:gray; float:right">Comunica engines wrapped inside reusable images</span>
+          </li>
+          <li>
+              <a href="https://github.com/rdfjs/comunica-browser">Browser builds</a>
+              <span style="color:gray; float:right">Easily use Comunica in Web applications</span>
+          </li>
+          <li>
+              <a href="https://gitter.im/comunica/Lobby">Gitter chat</a>
+              <span style="color:gray; float:right">Get help from the community</span>
+          </li>
       </ul>
     </section>
     
