@@ -73,7 +73,7 @@
       <ul>
         <li><a href="#index-architecture">Architecture</a></li>
         <li><a href="#index-implementation">Implementation</a></li>
-        <li><a href="#index-performance">Performance</a></li>
+        <li><a href="#index-usage">Using Comunica</a></li>
       </ul>
     </section>
     
@@ -81,7 +81,7 @@
       <ul>
         <li class="current"><a href="#index-architecture">Architecture</a></li>
         <li><a href="#index-implementation">Implementation</a></li>
-        <li><a href="#index-performance">Performance</a></li>
+        <li><a href="#index-usage">Using Comunica</a></li>
       </ul>
     </section>
     
@@ -133,7 +133,7 @@
       <ul>
         <li><a href="#index-architecture">Architecture</a></li>
         <li class="current"><a href="#index-implementation">Implementation</a></li>
-        <li><a href="#index-performance">Performance</a></li>
+        <li><a href="#index-usage">Using Comunica</a></li>
       </ul>
     </section>
     
@@ -148,7 +148,7 @@
       </ul>
     </section>
     
-    <section id="Features" class="slide">
+    <section id="features" class="slide">
       <h2>Current features</h2>
       <ul>
           <li>
@@ -183,51 +183,70 @@
       </ul>
     </section>
     
-    <section id="Features" class="slide">
+    <section id="live-demo" class="slide">
       <h2>Federate over any set of sources<br />from <a href="http://query.linkeddatafragments.org/#datasources=http%3A%2F%2Ffragments.dbpedia.org%2F2016-04%2Fen;https%3A%2F%2Fruben.verborgh.org%2Fprofile%2F%23me&query=SELECT%20%3FinterestName%0AWHERE%20%7B%0A%20%20ruben%3Ame%20foaf%3Atopic_interest%20%3Finterest.%0A%20%20%3Finterest%20rdfs%3Alabel%20%3FinterestName.%0A%20%20FILTER%20LANGMATCHES(LANG(%3FinterestName)%2C%20%20%22EN%22)%0A%7D">your browser</a></h2>
       <iframe class="query-client" src="engine/#datasources=http%3A%2F%2Ffragments.dbpedia.org%2F2016-04%2Fen;https%3A%2F%2Fruben.verborgh.org%2Fprofile%2F%23me&query=SELECT%20%3FinterestName%0AWHERE%20%7B%0A%20%20ruben%3Ame%20foaf%3Atopic_interest%20%3Finterest.%0A%20%20%3Finterest%20rdfs%3Alabel%20%3FinterestName.%0A%20%20FILTER%20LANGMATCHES(LANG(%3FinterestName)%2C%20%20%22EN%22)%0A%7D"></iframe>
-    </section>
-    
-    <section id="Features" class="slide">
-      <h2>How to use Comunica?</h2>
-      <ul>
-          <li>
-              <a href="http://query.linkeddatafragments.org/">query.linkeddatafragments.org</a>
-              <span style="color:gray; float:right">Try out queries in your browser</span>
-          </li>
-          <li>
-              <a href="https://github.com/comunica/comunica">Source code on GitHub</a>
-              <span style="color:gray; float:right">Develop your own Comunica modules</span>
-          </li>
-          <li>
-              <a href="http://comunica.readthedocs.io/en/latest/">Documentation</a>
-              <span style="color:gray; float:right">Usage and development manual</span>
-          </li>
-          <li>
-              <a href="https://www.npmjs.com/package/@comunica/actor-init-sparql">NPM packages</a>
-              <span style="color:gray; float:right">Using Comunica in JavaScript applications</span>
-          </li>
-          <li>
-              <a href="https://hub.docker.com/r/comunica/actor-init-sparql/">Docker images</a>
-              <span style="color:gray; float:right">Comunica engines wrapped inside reusable images</span>
-          </li>
-          <li>
-              <a href="https://github.com/rdfjs/comunica-browser">Browser builds</a>
-              <span style="color:gray; float:right">Easily use Comunica in Web applications</span>
-          </li>
-          <li>
-              <a href="https://gitter.im/comunica/Lobby">Gitter chat</a>
-              <span style="color:gray; float:right">Get help from the community</span>
-          </li>
-      </ul>
     </section>
     
     <section id="index-performance" class="slide index">
       <ul>
         <li><a href="#index-architecture">Architecture</a></li>
         <li><a href="#index-implementation">Implementation</a></li>
-        <li class="current"><a href="#index-performance">Performance</a></li>
+        <li class="current"><a href="#index-usage">Using Comunica</a></li>
       </ul>
+    </section>
+    
+    <section id="usage-browser" class="slide">
+      <h2>Execute queries in your <a href="query.linkeddatafragments.org">browser</a></h2>
+      <h3><a href="http://query.linkeddatafragments.org/">http://query.linkeddatafragments.org/</a></h3>
+      <iframe src="http://query.linkeddatafragments.org/"></iframe>
+    </section>
+    
+    <section id="usage-github" class="slide">
+      <h2>Develop your own Comunica modules</h2>
+      <img src="img/github.png" width="100px" style="float:left; margin: 1em">
+      <h3 style="margin-top: 2.7em"><a href="https://github.com/comunica/comunica/">https://github.com/comunica/comunica/</a></h3>
+    </section>
+    
+    <section id="usage-documentation" class="slide">
+      <h2>Usage and development manual</h2>
+      <h3><a href="http://comunica.readthedocs.io/en/latest/">http://comunica.readthedocs.io/en/latest/</a></h3>
+      <iframe src="http://comunica.readthedocs.io/en/latest/"></iframe>
+    </section>
+    
+    <section id="usage-npm" class="slide">
+      <h2>Using Comunica in JavaScript applications</h2>
+      <img src="img/npm.png" width="100px" style="float:left; margin: 2em 1em">
+      <h3 style="margin-top: 2.7em; font-size: 1.1em"><a href="https://www.npmjs.com/package/@comunica/actor-init-sparql">https://www.npmjs.com/package/@comunica/actor-init-sparql</a></h3>
+      <br />
+      <center>
+          <pre>npm install -g @comunica/actor-init-sparql</pre>
+      </center>
+    </section>
+    
+    <section id="usage-docker" class="slide">
+      <h2>Comunica engines wrapped inside reusable images</h2>
+      <img src="img/docker.svg" width="200px" style="float:left; margin: 0.6em 1em">
+      <h3 style="margin-top: 2.7em; font-size: 1.1em"><a href="https://hub.docker.com/r/comunica/actor-init-sparql/">https://hub.docker.com/r/comunica/actor-init-sparql/</a></h3>
+      <br />
+      <center>
+          <pre>docker pull comunica/actor-init-sparql</pre>
+      </center>
+    </section>
+    
+    <section id="usage-browser" class="slide">
+      <h2>Easily use Comunica in Web applications</h2>
+      <h3><a href="https://github.com/rdfjs/comunica-browser">https://github.com/rdfjs/comunica-browser</a></h3>
+      <pre style="font-size: 0.6em">&#x3C;script src=&#x22;http://rdf.js.org/comunica-browser/versions/1/packages/actor-init-sparql/comunica-browser.js&#x22;/&#x3E;
+&#x3C;script language=&#x22;JavaScript&#x22;&#x3E;
+  var myEngine = Comunica.newEngine();
+&#x3C;/script&#x3E;</pre>
+    </section>
+    
+    <section id="usage-gitter" class="slide">
+      <h2>Get help from the community</h2>
+      <img src="img/gitter.png" width="100px" style="float:left; margin: 0.6em 1em">
+      <h3 style="margin-top: 2.7em; font-size: 1.1em"><a href="https://gitter.im/comunica/Lobby">https://gitter.im/comunica/Lobby</a></h3>
     </section>
 
     <footer>
