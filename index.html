@@ -65,7 +65,6 @@
       <ul style="font-size: 1.5em">
           <li>Highly modular <em>meta</em> query engine</li>
           <li>Flexible configuration system</li>
-          <li>Built for the Web</li>
       </ul>
     </section>
     
@@ -159,14 +158,6 @@
               <span style="color:gray; float:right">GraphQL is translated to SPARQL algebra</span>
           </li>
           <li>
-              Memento datetime negotiation
-              <span style="color:gray; float:right">Time-travel queries</span>
-          </li>
-          <li>
-              Environment-agnostic
-              <span style="color:gray; float:right">JS applications, browser, command-line</span>
-          </li>
-          <li>
               Federated querying of heterogeneous sources:
               <span style="color:gray; float:right">Any combination of sources</span>
           </li>
@@ -179,12 +170,20 @@
                   <li>RDFJS Source</li>
               </ul>
           </li>
+          <li>
+              Memento datetime negotiation
+              <span style="color:gray; float:right">Time-travel queries</span>
+          </li>
+          <li>
+              Environment-agnostic
+              <span style="color:gray; float:right">JS applications, browser, command-line</span>
+          </li>
       </ul>
     </section>
     
     <section id="live-demo" class="slide">
-      <h2>Federate over any set of sources<br />from <a href="http://query.linkeddatafragments.org/#datasources=http%3A%2F%2Ffragments.dbpedia.org%2F2016-04%2Fen;http%3A%2F%2Fruben.verborgh.org%2Fprofile%2F%23me&query=SELECT%20%3FinterestName%0AWHERE%20%7B%0A%20%20ruben%3Ame%20foaf%3Atopic_interest%20%3Finterest.%0A%20%20%3Finterest%20rdfs%3Alabel%20%3FinterestName.%0A%20%20FILTER%20LANGMATCHES(LANG(%3FinterestName)%2C%20%20%22EN%22)%0A%7D">your browser</a></h2>
-      <iframe class="query-client" src="./engine/#datasources=http%3A%2F%2Ffragments.dbpedia.org%2F2016-04%2Fen;http%3A%2F%2Fruben.verborgh.org%2Fprofile%2F%23me&query=SELECT%20%3FinterestName%0AWHERE%20%7B%0A%20%20ruben%3Ame%20foaf%3Atopic_interest%20%3Finterest.%0A%20%20%3Finterest%20rdfs%3Alabel%20%3FinterestName.%0A%20%20FILTER%20LANGMATCHES(LANG(%3FinterestName)%2C%20%20%22EN%22)%0A%7D"></iframe>
+      <h2>Federate over any set of sources<br />from <a href="http://query.linkeddatafragments.org/#datasources=http%3A%2F%2Ffragments.dbpedia.org%2F2016-04%2Fen;https%3A%2F%2Fruben.verborgh.org%2Fprofile%2F%23me&query=SELECT%20%3FinterestName%0AWHERE%20%7B%0A%20%20ruben%3Ame%20foaf%3Atopic_interest%20%3Finterest.%0A%20%20%3Finterest%20rdfs%3Alabel%20%3FinterestName.%0A%20%20FILTER%20LANGMATCHES(LANG(%3FinterestName)%2C%20%20%22EN%22)%0A%7D">your browser</a></h2>
+      <iframe class="query-client" src="./engine/#datasources=http%3A%2F%2Ffragments.dbpedia.org%2F2016-04%2Fen;https%3A%2F%2Fruben.verborgh.org%2Fprofile%2F%23me&query=SELECT%20%3FinterestName%0AWHERE%20%7B%0A%20%20ruben%3Ame%20foaf%3Atopic_interest%20%3Finterest.%0A%20%20%3Finterest%20rdfs%3Alabel%20%3FinterestName.%0A%20%20FILTER%20LANGMATCHES(LANG(%3FinterestName)%2C%20%20%22EN%22)%0A%7D"></iframe>
     </section>
     
     <section id="index-performance" class="slide index">
