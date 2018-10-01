@@ -53,10 +53,22 @@
         </ul>
     </section>
     
-    <section id="need" class="slide">
+    <section id="problem" class="slide">
       <h2>This variety of facets leads to <em>comparability</em> problems</h2>
-      <p class="next">Approaches are implemented <em>independently</em> in <em>different</em> engines.</p>
-      <p class="next indent">&rarr; Comparisons between approaches requires a <em>lot of effort</em> and can be <em>unfair</em></p>
+      <p><em>Alternative algorithms</em> are implemented in <em>different engines</em> &rarr; unfair!</p>
+      <center>
+          <img src="img/comp-engines.svg" />
+      </center>
+      
+      <h3 class="next center">Need for a flexible query engine<br />where various querying techniques<br />can be implemented and compared</h3>
+    </section>
+    
+    <section id="need" class="slide">
+      <h2>Need for a <em>flexible engine</em> to compare alternative algorithms</h2>
+      <center>
+          <img src="img/comp-algos.svg" />
+      </center>
+      
       <h3 class="next center">Need for a flexible query engine<br />where various querying techniques<br />can be implemented and compared</h3>
     </section>
     
@@ -104,6 +116,13 @@
       <p class="next"><em>Mediators</em> are responsible for selecting an actor to solve a certain task.</p>
       <p class="next center">
           <img src="img/actor-mediator-bus.svg" width="900px">
+      </p>
+    </section>
+    
+    <section id="actor-mediator-bus-example" class="slide">
+      <h2>Example: Parse as fast as possible</h2>
+      <p class="next center">
+          <img src="img/run-test-phases.svg" width="900px">
       </p>
     </section>
     
@@ -170,14 +189,6 @@
                   <li>RDFJS Source</li>
               </ul>
           </li>
-          <li>
-              Memento datetime negotiation
-              <span style="color:gray; float:right">Time-travel queries</span>
-          </li>
-          <li>
-              Environment-agnostic
-              <span style="color:gray; float:right">JS applications, browser, command-line</span>
-          </li>
       </ul>
     </section>
     
@@ -200,25 +211,13 @@
       <iframe src="http://query.linkeddatafragments.org/"></iframe>
     </section>
     
-    <section id="usage-github" class="slide">
-      <h2>Develop your own Comunica modules</h2>
-      <img src="img/github.png" width="100px" style="float:left; margin: 1em">
-      <h3 style="margin-top: 2.7em"><a href="https://github.com/comunica/comunica/">https://github.com/comunica/comunica/</a></h3>
-    </section>
-    
-    <section id="usage-documentation" class="slide">
-      <h2>Usage and development manual</h2>
-      <h3><a href="https://comunica.readthedocs.io/en/latest/">https://comunica.readthedocs.io/en/latest/</a></h3>
-      <iframe src="http://comunica.readthedocs.io/en/latest/"></iframe>
-    </section>
-    
     <section id="usage-npm" class="slide">
       <h2>Using Comunica in JavaScript applications</h2>
       <img src="img/npm.png" width="100px" style="float:left; margin: 2em 1em">
       <h3 style="margin-top: 2.7em; font-size: 1.1em"><a href="https://www.npmjs.com/package/@comunica/actor-init-sparql">https://www.npmjs.com/package/@comunica/actor-init-sparql</a></h3>
       <br />
       <center>
-          <pre>npm install -g @comunica/actor-init-sparql</pre>
+          <pre>npm install @comunica/actor-init-sparql</pre>
       </center>
     </section>
     
@@ -239,6 +238,18 @@
 &#x3C;script language=&#x22;JavaScript&#x22;&#x3E;
   var myEngine = Comunica.newEngine();
 &#x3C;/script&#x3E;</pre>
+    </section>
+    
+    <section id="usage-github" class="slide">
+      <h2>Develop your own Comunica modules</h2>
+      <img src="img/github.png" width="100px" style="float:left; margin: 1em">
+      <h3 style="margin-top: 2.7em"><a href="https://github.com/comunica/comunica/">https://github.com/comunica/comunica/</a></h3>
+    </section>
+    
+    <section id="usage-documentation" class="slide">
+      <h2>Usage and development manual</h2>
+      <h3><a href="https://comunica.readthedocs.io/en/latest/">https://comunica.readthedocs.io/en/latest/</a></h3>
+      <iframe src="http://comunica.readthedocs.io/en/latest/"></iframe>
     </section>
     
     <section id="usage-gitter" class="slide">
