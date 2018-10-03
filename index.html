@@ -130,20 +130,6 @@
       <h2>Modules are wired together through semantic configuration files</h2>
       <p class="next"><a href="https://componentsjs.readthedocs.io/en/latest/">Components.js</a>: a semantic dependency injection framework.</p>
       <p class="next">Configuration files declare and parameterize actors, mediators and buses.</p>
-      <div class="next">
-          <span>Example: RDF parser</span>
-          <pre style="font-size: 0.75em">"@id": "http://example.org/myrdfparser",
-"actors": [
-  { 
-    "@type": "ActorRdfParseN3",
-    "cc:Actor/bus": "cbrp:Actor/RdfParse"
-  },
-  {
-    "@type": "ActorRdfParseJsonLd",
-    "cc:Actor/bus": "cbrp:Actor/RdfParse"
-  }
-]</pre>
-      </div>
     </section>
     
     <section id="index-implementation" class="slide index">
@@ -159,7 +145,7 @@
       <ul>
           <li>Open-source under MIT license</li>
           <li>Implemented in TypeScript/JavaScript</li>
-          <li>114 separate modules</li>
+          <li>114 separate modules <em>(actors, buses, mediators)</em></li>
           <li>1619 unit tests with a coverage of 100%</li>
           <li>Compatible with JavaScript API specification of RDFJS (W3C community group)</li>
       </ul>
