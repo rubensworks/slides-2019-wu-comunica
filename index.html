@@ -32,16 +32,16 @@
       </div>
     </header>
 
-    <section id="title" class="slide title">
-      <h2>Comunica: a Modular SPARQL Query Engine<br />for the Web</h2>
+    <section id="title" class="slide title" inlist="" rel="schema:hasPart" resource="#title">
+      <h2 property="schema:name">Comunica: a Modular SPARQL Query Engine<br />for the Web</h2>
       <ul class="author inline">
           <li class="current"><a href="https://www.rubensworks.net/">Ruben Taelman</a></li>
       </ul>
       <p class="affiliation"><a href="http://idlab.technology/">Ghent University – imec – IDLab, Belgium</a></p>
     </section>
     
-    <section id="start" class="slide" style="background-image: url('img/diamond.jpg')">
-        <h2 class="big" style="margin-top: 20px; color: white; text-shadow: 2px 2px black">Querying Linked Data on the Web<br />is a multifaceted story</h2>
+    <section id="start" class="slide" style="background-image: url('img/diamond.jpg')" inlist="" rel="schema:hasPart" resource="#start">
+        <h2 property="schema:name" class="big" style="margin-top: 20px; color: white; text-shadow: 2px 2px black">Querying Linked Data on the Web<br />is a multifaceted story</h2>
         <ul style="color: white; text-shadow: 2px 2px black; font-size: 1.3em">
             <li>Query languages and extensions</li>
             <li>Publication interfaces</li>
@@ -50,8 +50,8 @@
         </ul>
     </section>
     
-    <section id="problem" class="slide">
-      <h2>This variety of facets leads to <em>comparability</em> problems</h2>
+    <section id="problem" class="slide" inlist="" rel="schema:hasPart" resource="#problem">
+      <h2 property="schema:name">This variety of facets leads to <em>comparability</em> problems</h2>
       <center class="next">
           <em>Alternative algorithms</em> are implemented in <em>different engines</em> &rarr; unfair!
           <img src="img/comp-engines.svg" />
@@ -60,8 +60,8 @@
       <h3 class="next center">Need for a flexible query engine<br />where various querying techniques<br />can be implemented and compared</h3>
     </section>
     
-    <section id="need" class="slide">
-      <h2>Need for a <em>flexible engine</em> to compare alternative algorithms</h2>
+    <section id="need" class="slide" inlist="" rel="schema:hasPart" resource="#need">
+      <h2 property="schema:name">Need for a <em>flexible engine</em> to compare alternative algorithms</h2>
       <center>
           <img src="img/comp-algos.svg" />
       </center>
@@ -69,7 +69,7 @@
       <h3 class="next center">Need for a flexible query engine<br />where various querying techniques<br />can be implemented and compared</h3>
     </section>
     
-    <section id="comunica" class="slide center" style="background-color: #be1622; color: white">
+    <section id="comunica" class="slide center" style="background-color: #be1622; color: white" inlist="" rel="schema:hasPart" resource="#comunica">
       <img src="img/comunica.svg" width="250px" />
       <ul style="font-size: 1.5em">
           <li>Highly modular <em>meta</em> query engine</li>
@@ -77,7 +77,7 @@
       </ul>
     </section>
     
-    <section id="index" class="slide index">
+    <section id="index" class="slide index" inlist="" rel="schema:hasPart" resource="#index">
       <ul>
         <li><a href="#index-architecture">Architecture</a></li>
         <li><a href="#index-implementation">Implementation</a></li>
@@ -85,7 +85,7 @@
       </ul>
     </section>
     
-    <section id="index-architecture" class="slide index">
+    <section id="index-architecture" class="slide index" inlist="" rel="schema:hasPart" resource="#index-architecture">
       <ul>
         <li class="current"><a href="#index-architecture">Architecture</a></li>
         <li><a href="#index-implementation">Implementation</a></li>
@@ -93,8 +93,8 @@
       </ul>
     </section>
     
-    <section id="actor-model" class="slide">
-      <h2>Modularity using the <em>actor</em> model</h2>
+    <section id="actor-model" class="slide" inlist="" rel="schema:hasPart" resource="#actor-model">
+      <h2 property="schema:name">Modularity using the <em>actor</em> model</h2>
       <p class="next">Logic is separated into different <em>actors</em>.</p>
       <p class="next">Each actor <em>independently</em> performs a <em>specific task</em>.</p>
       <p>
@@ -106,8 +106,8 @@
       </p>
     </section>
     
-    <section id="actor-mediator-bus" class="slide">
-      <h2>Actors can be <em>combined</em> for solving more <em>complex tasks</em>.</h2>
+    <section id="actor-mediator-bus" class="slide" inlist="" rel="schema:hasPart" resource="#actor-mediator-bus">
+      <h2 property="schema:name">Actors can be <em>combined</em> for solving more <em>complex tasks</em>.</h2>
       <p class="next">Actors subscribe to task-specific <em>buses</em>.</p>
       <p class="next"><em>Mediators</em> are responsible for selecting an actor to solve a certain task.</p>
       <p class="next center">
@@ -115,20 +115,20 @@
       </p>
     </section>
     
-    <section id="actor-mediator-bus-example" class="slide">
-      <h2>Example: Parse as fast as possible</h2>
+    <section id="actor-mediator-bus-example" class="slide" inlist="" rel="schema:hasPart" resource="#actor-mediator-bus-example">
+      <h2 property="schema:name">Example: Parse as fast as possible</h2>
       <p class="next center">
           <img src="img/run-test-phases.svg" width="900px">
       </p>
     </section>
     
-    <section id="actor-mediator-bus" class="slide">
-      <h2>Modules are wired together through semantic configuration files</h2>
+    <section id="componentsjs" class="slide" inlist="" rel="schema:hasPart" resource="#componentsjs">
+      <h2 property="schema:name">Modules are wired together through semantic configuration files</h2>
       <p class="next"><a href="https://componentsjs.readthedocs.io/en/latest/">Components.js</a>: a semantic dependency injection framework.</p>
       <p class="next">Configuration files declare and parameterize actors, mediators and buses.</p>
     </section>
     
-    <section id="index-implementation" class="slide index">
+    <section id="index-implementation" class="slide index" inlist="" rel="schema:hasPart" resource="#index-implementation">
       <ul>
         <li><a href="#index-architecture">Architecture</a></li>
         <li class="current"><a href="#index-implementation">Implementation</a></li>
@@ -136,8 +136,8 @@
       </ul>
     </section>
     
-    <section id="implementation-details" class="slide">
-      <h2>Implementation details</h2>
+    <section id="implementation-details" class="slide" inlist="" rel="schema:hasPart" resource="#implementation-details">
+      <h2 property="schema:name">Implementation details</h2>
       <ul>
           <li>Open-source under MIT license</li>
           <li>Implemented in TypeScript/JavaScript</li>
@@ -147,8 +147,8 @@
       </ul>
     </section>
     
-    <section id="features" class="slide">
-      <h2>Current features</h2>
+    <section id="features" class="slide" inlist="" rel="schema:hasPart" resource="#features">
+      <h2 property="schema:name">Current features</h2>
       <ul>
           <li>
               SPARQL 1.1 support
@@ -171,7 +171,7 @@
       </ul>
     </section>
     
-    <section id="index-performance" class="slide index">
+    <section id="index-performance" class="slide index" inlist="" rel="schema:hasPart" resource="#index-performance">
       <ul>
         <li><a href="#index-architecture">Architecture</a></li>
         <li><a href="#index-implementation">Implementation</a></li>
@@ -179,8 +179,8 @@
       </ul>
     </section>
     
-    <section id="usage" class="slide">
-      <h2>Using Comunica</h2>
+    <section id="usage" class="slide" inlist="" rel="schema:hasPart" resource="#usage">
+      <h2 property="schema:name">Using Comunica</h2>
       <ul>
         <li>
             <h3>in your browser:</h3>
@@ -202,7 +202,7 @@
       </ul>
     </section>
     
-    <section id="conclusion" class="slide" style="background-color: #be1622; text-align: center">
+    <section id="conclusion" class="slide" style="background-color: #be1622; text-align: center" inlist="" rel="schema:hasPart" resource="#conclusion">
       <ul>
           <li><h3 style="color:white;margin-left:-1em">Fair.</h3></li>
           <li><h3 style="color:white;margin-left:-1em">Modular.</h3></li>
