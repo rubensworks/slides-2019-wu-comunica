@@ -1,6 +1,6 @@
-# Slides for ISWC on Comunica
+# Slides for guest talk at WU on Comunica
 
-[![Build Status](https://travis-ci.org/rubensworks/slides-2018-iswc-comunica.svg?branch=master)](https://travis-ci.org/rubensworks/slides-2018-iswc-comunica)
+[![Build Status](https://travis-ci.org/rubensworks/slides-2019-wu-comunica.svg?branch=master)](https://travis-ci.org/rubensworks/slides-2019-wu-comunica)
 
 These slides are created using the [shower](https://github.com/shower/shower) framework.
 
